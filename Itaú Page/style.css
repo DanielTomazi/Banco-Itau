@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3841c;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    background-color: #fff;
+}
+
+.logo {
+    margin-left: 35px;
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    width: auto;
+}
+
+nav a {
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 8px
+}
+
+a {
+    text-decoration: none;
+    color: #303030;
+    transition: 0.1s;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #f3841c;
+    border-radius: 18px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.login img{
+    width: 40px;
+}
+
+.corpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #f3841c;
+    color: #fff;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.pagina {
+    width: 550px;
+}
+
+.pagina_texto h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.pagina_texto h2{
+    font-size: 20px;
+}
+
+.pagina_foto {
+    display: flex;
+}    
+
+.pagina_foto img {
+    width: 550px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.pagina_cadastro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.pagina_cadastro input{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
+    outline: 0;
+}
+
+label {
+    color: #000;
+    font-size: 28px;
+}
+
+button {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    color: #949393;
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    border: 1px solid #f3841c;
+    background-color: #f3841c;
+    color: #fff;
+}
+
+button img {
+    width: 16px;
+    height: 16px;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.mm_text {
+    padding: 10px;
+    background-color: #f3841c;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+@media(max-width:1050px) {
+    .corpo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:780px) {
+    .logo img {
+        width: 40px;
+        margin-top: 7px;
+    }
+    nav a {
+        padding: 7px;
+    }
+
+    li {
+        font-size: 13px;
+        margin-top: 13px;
+    }
+
+    .text_login {
+        font-size: 13px;
+    }
+
+    .login img {
+        width: 30px;
+    }
+}
+
+@media(max-width:660px) {
+    .pagina_cadastro {
+        width: 450px;
+    }
+}
+
+@media(max-width:600px) {
+    .logo img {
+        margin-left: -20px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    li {
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .text_login {
+        font-size: 11px;
+    }
+
+    .login img {
+        width: 24px;
+    }
+
+    .pagina {
+        width: 480px;
+    }
+
+    .pagina_texto h1 {
+        font-size: 25px;
+    }
+
+    .pagina_texto h2 {
+        font-size: 17px; 
+    }
+
+    .pagina_cadastro {
+        width: 400px;
+    }
+}
+
+@media(max-width:490px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linhas {
+        background-color: #000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px #303030;
+    }
+
+    li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    a {
+        color: #ccc;
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    a:hover {
+        border-radius: 10px;
+    }
+
+    .menu {
+        border-radius: 10px;
+        z-index: 0;
+    }
+
+    .pagina {
+        width: 350px;
+    }
+
+    .pagina_texto h1{
+        font-size: 25px;
+    }
+
+    .pagina_texto h2{
+        font-size: 20px;
+    }
+
+    .pagina_cadastro {
+        width: 300px;
+    }
+}
+
+@media(max-width:320px) {
+    .linhas {
+        box-shadow: 0px 0px 8px #303030;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .pagina {
+        width: 300px;
+    }
+
+    .pagina_cadastro {
+        width: 250px;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
